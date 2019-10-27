@@ -136,6 +136,7 @@ main(int argc, char* argv[])
 	}
 
 	// Launch the Vector Add CUDA Kernel
+
 	int threadsPerBlock = std::stoi(argv[2]);
 	int blocksPerGrid = (numElements + threadsPerBlock - 1) / threadsPerBlock;
 	printf("CUDA kernel launch with %d blocks of %d threads\n", blocksPerGrid, threadsPerBlock);
