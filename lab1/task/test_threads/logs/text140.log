@@ -1,0 +1,22 @@
+==17680== NVPROF is profiling process 17680, command: ..\test\x64\Release\test.exe 50000 140
+==17680== Profiling application: ..\test\x64\Release\test.exe 50000 140
+==17680== Profiling result:
+            Type  Time(%)      Time     Calls       Avg       Min       Max  Name
+ GPU activities:   62.64%  73.184us         2  36.592us  32.000us  41.184us  [CUDA memcpy HtoD]
+                   33.91%  39.617us         1  39.617us  39.617us  39.617us  [CUDA memcpy DtoH]
+                    3.45%  4.0320us         1  4.0320us  4.0320us  4.0320us  vectorAdd(float const *, float const *, float*, int)
+      API calls:   77.07%  143.74ms         3  47.913ms  4.8000us  143.73ms  cudaMalloc
+                   22.31%  41.610ms         1  41.610ms  41.610ms  41.610ms  cuDevicePrimaryCtxRelease
+                    0.27%  506.90us         3  168.97us  89.000us  256.40us  cudaMemcpy
+                    0.12%  222.50us        97  2.2930us     100ns  66.600us  cuDeviceGetAttribute
+                    0.11%  201.90us         3  67.300us  7.2000us  181.60us  cudaFree
+                    0.08%  140.70us         1  140.70us  140.70us  140.70us  cuModuleUnload
+                    0.03%  63.100us         1  63.100us  63.100us  63.100us  cudaLaunchKernel
+                    0.01%  14.600us         1  14.600us  14.600us  14.600us  cuDeviceTotalMem
+                    0.00%  8.6000us         1  8.6000us  8.6000us  8.6000us  cuDeviceGetPCIBusId
+                    0.00%  1.0000us         3     333ns     100ns     700ns  cuDeviceGetCount
+                    0.00%     900ns         2     450ns     200ns     700ns  cuDeviceGet
+                    0.00%     700ns         1     700ns     700ns     700ns  cuDeviceGetName
+                    0.00%     400ns         1     400ns     400ns     400ns  cuDeviceGetLuid
+                    0.00%     300ns         1     300ns     300ns     300ns  cuDeviceGetUuid
+                    0.00%     300ns         1     300ns     300ns     300ns  cudaGetLastError

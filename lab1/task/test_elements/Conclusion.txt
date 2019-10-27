@@ -1,0 +1,5 @@
+When looking at the results ('plot_times.png'), as expected we can see that the time necessary for the processing is increasing with the increasing number of elements added.
+If we look precisely at the average time needed per element ('plot_average.png') we can see that there is a dip at the 85000 elements mark, after which the times increase a bit where they remain steady. 
+It looks like the optimal amount of blocks is around 335.
+
+All the informations given can be found in the logs_* file and also in the other *.txt files

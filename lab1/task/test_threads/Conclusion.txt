@@ -1,0 +1,4 @@
+Looking at the sorted_output.txt file, it is obvious that the best solutions are 256 or 128 threads per block, where 256 threads per blocks takes the win.
+Within the top contenders we see that almost all fastest configurations have a multiple of 32 threads.
+In the end, when looking at the plot_without_first100.png(the first 100 have been taken out because they were exponentionally slower) we cann see a saw pattern emerging.
+It looks like the worst configurations have n*32 + 1 threads per block.
