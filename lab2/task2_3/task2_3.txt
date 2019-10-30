@@ -1,0 +1,6 @@
+In the managedMemoryUtility.cu file, we can see how to use the cudaMallocManaged() function.
+Basically we let the compiler do the repetative memory copying, so that we dont have to call the cudaMemcpy().
+As a result of cudaMallocManaged(int) we get a pointer to the memory which we can use in the device code and kernel code.
+
+Also in this example, we can see how to make sure that we don't use up too much memory. We do that by querying the device for the device memory. 
+We query the device memory, and then we check if the array we want to allocate is going to be larger than our GPU memory can accomodate.

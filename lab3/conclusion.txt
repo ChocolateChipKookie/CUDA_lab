@@ -1,0 +1,16 @@
+When trying to asses how many page faults we got by executing the programs, we got the following numbers:
+GPU:
+   no
+CPU:
+   384 page faults
+GPU+CPU:
+   403 page faults
+CPU+GPU:
+   407 page faults
+
+After examining the unified memory tab in nvvp, there was an obvious trend.
+	When profiling the gpu-only program, there was no data transfer, which implies that the reserved memory is on the device
+	This fact is proven when executing the cpu-only program, as we see a device-to-host memory transfer
+	Further experiments on GPU+CPU and CPU+GPU are as expected.
+		GPU+CPU, there is only one device-to-host memory transfer
+		CPU+GPU, there are 2 memory transfers, as firstly the data has to be transfered from the GPU to the CPU, where it will be handeled, after which it gets moved back to the device where the kernel is executed
