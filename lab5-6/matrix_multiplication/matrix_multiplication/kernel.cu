@@ -15,6 +15,7 @@ __global__ void multiplyKernel(float* res_mat, float* mat1, float* mat2, size_t 
 	size_t m_ = blockIdx.x * 32 + threadIdx.x;
 	size_t p_ = blockIdx.y * 32 + threadIdx.y;
 
+
 	if (m_ >= m || p_ >= p)
 		return;
 
