@@ -503,6 +503,48 @@ int main()
 	std::default_random_engine engine;
 	std::uniform_int_distribution<int> dist(0, 4);
 
+#if 1
+
+	for(unsigned size = 16; size < 1024; ++size)
+	{
+		std::cout << size << ' ';
+		
+		matrix mat1(size, size);
+		matrix mat2(size, size);
+
+		for (auto& i : mat1)
+		{
+			i = dist(engine);
+		}
+
+		for (auto& i : mat2)
+		{
+			i = dist(engine);
+		}
+
+		auto begin = std::chrono::steady_clock::now();
+		matrix mat = mat1 * mat2;
+		auto end = std::chrono::steady_clock::now();
+
+		std::cout << std::chrono::duration_cast<std::chrono::microseconds>(end - begin).count() << ' ';
+
+		if(size < 32)
+		{
+			begin = std::chrono::steady_clock::now();
+			matrix mc2 = multiplyWithCudaShared(mat1, mat2);
+			end = std::chrono::steady_clock::now();
+			std::cout << std::chrono::duration_cast<std::chrono::microseconds>(end - begin).count() << ' ';
+		}
+
+		begin = std::chrono::steady_clock::now();
+		matrix m3 = multiplyWithCuda(mat1, mat2);
+		end = std::chrono::steady_clock::now();
+
+		std::cout << std::chrono::duration_cast<std::chrono::microseconds>(end - begin).count() <<std::endl;
+	}
+
+#else
+
 	matrix mat1(3, 3);
 	matrix mat2(3, 3);
 
@@ -551,6 +593,7 @@ int main()
 	std::cout << "Results are same = " << (mat == mc ? "True" : "False") << std::endl;
 #endif
 
+#endif
 	// cudaDeviceReset must be called before exiting in order for profiling and
 	// tracing tools such as Nsight and Visual Profiler to show complete traces.
 	cudaError_t cudaStatus = cudaDeviceReset();

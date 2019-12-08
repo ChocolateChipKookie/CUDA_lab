@@ -1,76 +1,166 @@
 ﻿  Compiling CUDA source file kernel.cu...
   
-  C:\Users\Adi\Documents\Faks\semestar_7\CUDA\lab\lab5\matrix_multiplication\matrix_multiplication>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\bin\nvcc.exe" -gencode=arch=compute_35,code=\"sm_35,compute_35\" --use-local-env -ccbin "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.23.28105\bin\HostX86\x64" -x cu  -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\include"  -G   --keep-dir x64\Debug -maxrregcount=0  --machine 64 --compile -cudart static  -g   -DWIN32 -DWIN64 -D_DEBUG -D_CONSOLE -D_MBCS -Xcompiler "/EHsc /W3 /nologo /Od /Fdx64\Debug\vc142.pdb /FS /Zi /RTC1 /MDd " -o x64\Debug\kernel.cu.obj "C:\Users\Adi\Documents\Faks\semestar_7\CUDA\lab\lab5\matrix_multiplication\matrix_multiplication\kernel.cu" 
-C:/Users/Adi/Documents/Faks/semestar_7/CUDA/lab/lab5/matrix_multiplication/matrix_multiplication/kernel.cu(212): warning : transfer of control bypasses initialization of:
+  C:\Users\Adi\Documents\Faks\semestar_7\CUDA\lab\lab5-6\matrix_multiplication\matrix_multiplication>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\bin\nvcc.exe" -gencode=arch=compute_35,code=\"sm_35,compute_35\" --use-local-env -ccbin "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.23.28105\bin\HostX86\x64" -x cu  -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\include"  -G   --keep-dir x64\Debug -maxrregcount=0  --machine 64 --compile -cudart static  -g   -DWIN32 -DWIN64 -D_DEBUG -D_CONSOLE -D_MBCS -Xcompiler "/EHsc /W3 /nologo /Od /Fdx64\Debug\vc142.pdb /FS /Zi /RTC1 /MDd " -o x64\Debug\kernel.cu.obj "C:\Users\Adi\Documents\Faks\semestar_7\CUDA\lab\lab5-6\matrix_multiplication\matrix_multiplication\kernel.cu" 
+C:/Users/Adi/Documents/Faks/semestar_7/CUDA/lab/lab5-6/matrix_multiplication/matrix_multiplication/kernel.cu(277): warning : transfer of control bypasses initialization of:
               variable "threads_per_block"
-  (249): here
+  (310): here
               variable "blocks_per_grid"
-  (250): here
+  (311): here
   
-C:/Users/Adi/Documents/Faks/semestar_7/CUDA/lab/lab5/matrix_multiplication/matrix_multiplication/kernel.cu(220): warning : transfer of control bypasses initialization of:
+C:/Users/Adi/Documents/Faks/semestar_7/CUDA/lab/lab5-6/matrix_multiplication/matrix_multiplication/kernel.cu(285): warning : transfer of control bypasses initialization of:
               variable "threads_per_block"
-  (249): here
+  (310): here
               variable "blocks_per_grid"
-  (250): here
+  (311): here
   
-C:/Users/Adi/Documents/Faks/semestar_7/CUDA/lab/lab5/matrix_multiplication/matrix_multiplication/kernel.cu(227): warning : transfer of control bypasses initialization of:
+C:/Users/Adi/Documents/Faks/semestar_7/CUDA/lab/lab5-6/matrix_multiplication/matrix_multiplication/kernel.cu(292): warning : transfer of control bypasses initialization of:
               variable "threads_per_block"
-  (249): here
+  (310): here
               variable "blocks_per_grid"
-  (250): here
+  (311): here
   
-C:/Users/Adi/Documents/Faks/semestar_7/CUDA/lab/lab5/matrix_multiplication/matrix_multiplication/kernel.cu(234): warning : transfer of control bypasses initialization of:
+C:/Users/Adi/Documents/Faks/semestar_7/CUDA/lab/lab5-6/matrix_multiplication/matrix_multiplication/kernel.cu(299): warning : transfer of control bypasses initialization of:
               variable "threads_per_block"
-  (249): here
+  (310): here
               variable "blocks_per_grid"
-  (250): here
+  (311): here
   
-C:/Users/Adi/Documents/Faks/semestar_7/CUDA/lab/lab5/matrix_multiplication/matrix_multiplication/kernel.cu(241): warning : transfer of control bypasses initialization of:
+C:/Users/Adi/Documents/Faks/semestar_7/CUDA/lab/lab5-6/matrix_multiplication/matrix_multiplication/kernel.cu(306): warning : transfer of control bypasses initialization of:
               variable "threads_per_block"
-  (249): here
+  (310): here
               variable "blocks_per_grid"
-  (250): here
+  (311): here
   
-C:/Users/Adi/Documents/Faks/semestar_7/CUDA/lab/lab5/matrix_multiplication/matrix_multiplication/kernel.cu(212): warning : transfer of control bypasses initialization of:
+C:/Users/Adi/Documents/Faks/semestar_7/CUDA/lab/lab5-6/matrix_multiplication/matrix_multiplication/kernel.cu(368): warning : transfer of control bypasses initialization of:
               variable "threads_per_block"
-  (249): here
+  (401): here
               variable "blocks_per_grid"
-  (250): here
+  (402): here
+              variable "shared_size"
+  (404): here
   
-C:/Users/Adi/Documents/Faks/semestar_7/CUDA/lab/lab5/matrix_multiplication/matrix_multiplication/kernel.cu(220): warning : transfer of control bypasses initialization of:
+C:/Users/Adi/Documents/Faks/semestar_7/CUDA/lab/lab5-6/matrix_multiplication/matrix_multiplication/kernel.cu(376): warning : transfer of control bypasses initialization of:
               variable "threads_per_block"
-  (249): here
+  (401): here
               variable "blocks_per_grid"
-  (250): here
+  (402): here
+              variable "shared_size"
+  (404): here
   
-C:/Users/Adi/Documents/Faks/semestar_7/CUDA/lab/lab5/matrix_multiplication/matrix_multiplication/kernel.cu(227): warning : transfer of control bypasses initialization of:
+C:/Users/Adi/Documents/Faks/semestar_7/CUDA/lab/lab5-6/matrix_multiplication/matrix_multiplication/kernel.cu(383): warning : transfer of control bypasses initialization of:
               variable "threads_per_block"
-  (249): here
+  (401): here
               variable "blocks_per_grid"
-  (250): here
+  (402): here
+              variable "shared_size"
+  (404): here
   
-C:/Users/Adi/Documents/Faks/semestar_7/CUDA/lab/lab5/matrix_multiplication/matrix_multiplication/kernel.cu(234): warning : transfer of control bypasses initialization of:
+C:/Users/Adi/Documents/Faks/semestar_7/CUDA/lab/lab5-6/matrix_multiplication/matrix_multiplication/kernel.cu(390): warning : transfer of control bypasses initialization of:
               variable "threads_per_block"
-  (249): here
+  (401): here
               variable "blocks_per_grid"
-  (250): here
+  (402): here
+              variable "shared_size"
+  (404): here
   
-C:/Users/Adi/Documents/Faks/semestar_7/CUDA/lab/lab5/matrix_multiplication/matrix_multiplication/kernel.cu(241): warning : transfer of control bypasses initialization of:
+C:/Users/Adi/Documents/Faks/semestar_7/CUDA/lab/lab5-6/matrix_multiplication/matrix_multiplication/kernel.cu(397): warning : transfer of control bypasses initialization of:
               variable "threads_per_block"
-  (249): here
+  (401): here
               variable "blocks_per_grid"
-  (250): here
+  (402): here
+              variable "shared_size"
+  (404): here
+  
+C:/Users/Adi/Documents/Faks/semestar_7/CUDA/lab/lab5-6/matrix_multiplication/matrix_multiplication/kernel.cu(277): warning : transfer of control bypasses initialization of:
+              variable "threads_per_block"
+  (310): here
+              variable "blocks_per_grid"
+  (311): here
+  
+C:/Users/Adi/Documents/Faks/semestar_7/CUDA/lab/lab5-6/matrix_multiplication/matrix_multiplication/kernel.cu(285): warning : transfer of control bypasses initialization of:
+              variable "threads_per_block"
+  (310): here
+              variable "blocks_per_grid"
+  (311): here
+  
+C:/Users/Adi/Documents/Faks/semestar_7/CUDA/lab/lab5-6/matrix_multiplication/matrix_multiplication/kernel.cu(292): warning : transfer of control bypasses initialization of:
+              variable "threads_per_block"
+  (310): here
+              variable "blocks_per_grid"
+  (311): here
+  
+C:/Users/Adi/Documents/Faks/semestar_7/CUDA/lab/lab5-6/matrix_multiplication/matrix_multiplication/kernel.cu(299): warning : transfer of control bypasses initialization of:
+              variable "threads_per_block"
+  (310): here
+              variable "blocks_per_grid"
+  (311): here
+  
+C:/Users/Adi/Documents/Faks/semestar_7/CUDA/lab/lab5-6/matrix_multiplication/matrix_multiplication/kernel.cu(306): warning : transfer of control bypasses initialization of:
+              variable "threads_per_block"
+  (310): here
+              variable "blocks_per_grid"
+  (311): here
+  
+C:/Users/Adi/Documents/Faks/semestar_7/CUDA/lab/lab5-6/matrix_multiplication/matrix_multiplication/kernel.cu(368): warning : transfer of control bypasses initialization of:
+              variable "threads_per_block"
+  (401): here
+              variable "blocks_per_grid"
+  (402): here
+              variable "shared_size"
+  (404): here
+  
+C:/Users/Adi/Documents/Faks/semestar_7/CUDA/lab/lab5-6/matrix_multiplication/matrix_multiplication/kernel.cu(376): warning : transfer of control bypasses initialization of:
+              variable "threads_per_block"
+  (401): here
+              variable "blocks_per_grid"
+  (402): here
+              variable "shared_size"
+  (404): here
+  
+C:/Users/Adi/Documents/Faks/semestar_7/CUDA/lab/lab5-6/matrix_multiplication/matrix_multiplication/kernel.cu(383): warning : transfer of control bypasses initialization of:
+              variable "threads_per_block"
+  (401): here
+              variable "blocks_per_grid"
+  (402): here
+              variable "shared_size"
+  (404): here
+  
+C:/Users/Adi/Documents/Faks/semestar_7/CUDA/lab/lab5-6/matrix_multiplication/matrix_multiplication/kernel.cu(390): warning : transfer of control bypasses initialization of:
+              variable "threads_per_block"
+  (401): here
+              variable "blocks_per_grid"
+  (402): here
+              variable "shared_size"
+  (404): here
+  
+C:/Users/Adi/Documents/Faks/semestar_7/CUDA/lab/lab5-6/matrix_multiplication/matrix_multiplication/kernel.cu(397): warning : transfer of control bypasses initialization of:
+              variable "threads_per_block"
+  (401): here
+              variable "blocks_per_grid"
+  (402): here
+              variable "shared_size"
+  (404): here
   
   kernel.cu
-C:/Users/Adi/Documents/Faks/semestar_7/CUDA/lab/lab5/matrix_multiplication/matrix_multiplication/kernel.cu(129): warning C4267: 'argument': conversion from 'size_t' to 'unsigned int', possible loss of data
-C:/Users/Adi/Documents/Faks/semestar_7/CUDA/lab/lab5/matrix_multiplication/matrix_multiplication/kernel.cu(200): warning C4267: 'argument': conversion from 'size_t' to 'unsigned int', possible loss of data
-C:/Users/Adi/Documents/Faks/semestar_7/CUDA/lab/lab5/matrix_multiplication/matrix_multiplication/kernel.cu(249): warning C4267: 'argument': conversion from 'size_t' to 'unsigned int', possible loss of data
-C:/Users/Adi/Documents/Faks/semestar_7/CUDA/lab/lab5/matrix_multiplication/matrix_multiplication/kernel.cu(250): warning C4267: 'argument': conversion from 'size_t' to 'unsigned int', possible loss of data
-C:/Users/Adi/Documents/Faks/semestar_7/CUDA/lab/lab5/matrix_multiplication/matrix_multiplication/kernel.cu(278): warning C4533: initialization of 'blocks_per_grid' is skipped by 'goto Error'
-  C:/Users/Adi/Documents/Faks/semestar_7/CUDA/lab/lab5/matrix_multiplication/matrix_multiplication/kernel.cu(250): note: see declaration of 'blocks_per_grid'
-  C:/Users/Adi/Documents/Faks/semestar_7/CUDA/lab/lab5/matrix_multiplication/matrix_multiplication/kernel.cu(278): note: see declaration of 'Error'
-C:/Users/Adi/Documents/Faks/semestar_7/CUDA/lab/lab5/matrix_multiplication/matrix_multiplication/kernel.cu(278): warning C4533: initialization of 'threads_per_block' is skipped by 'goto Error'
-  C:/Users/Adi/Documents/Faks/semestar_7/CUDA/lab/lab5/matrix_multiplication/matrix_multiplication/kernel.cu(249): note: see declaration of 'threads_per_block'
-  C:/Users/Adi/Documents/Faks/semestar_7/CUDA/lab/lab5/matrix_multiplication/matrix_multiplication/kernel.cu(278): note: see declaration of 'Error'
-     Creating library C:\Users\Adi\Documents\Faks\semestar_7\CUDA\lab\lab5\matrix_multiplication\x64\Debug\matrix_multiplication.lib and object C:\Users\Adi\Documents\Faks\semestar_7\CUDA\lab\lab5\matrix_multiplication\x64\Debug\matrix_multiplication.exp
-  matrix_multiplication.vcxproj -> C:\Users\Adi\Documents\Faks\semestar_7\CUDA\lab\lab5\matrix_multiplication\x64\Debug\matrix_multiplication.exe
+C:/Users/Adi/Documents/Faks/semestar_7/CUDA/lab/lab5-6/matrix_multiplication/matrix_multiplication/kernel.cu(180): warning C4267: 'argument': conversion from 'size_t' to 'unsigned int', possible loss of data
+C:/Users/Adi/Documents/Faks/semestar_7/CUDA/lab/lab5-6/matrix_multiplication/matrix_multiplication/kernel.cu(265): warning C4267: 'argument': conversion from 'size_t' to 'unsigned int', possible loss of data
+C:/Users/Adi/Documents/Faks/semestar_7/CUDA/lab/lab5-6/matrix_multiplication/matrix_multiplication/kernel.cu(310): warning C4267: 'argument': conversion from 'size_t' to 'unsigned int', possible loss of data
+C:/Users/Adi/Documents/Faks/semestar_7/CUDA/lab/lab5-6/matrix_multiplication/matrix_multiplication/kernel.cu(311): warning C4267: 'argument': conversion from 'size_t' to 'unsigned int', possible loss of data
+C:/Users/Adi/Documents/Faks/semestar_7/CUDA/lab/lab5-6/matrix_multiplication/matrix_multiplication/kernel.cu(339): warning C4533: initialization of 'blocks_per_grid' is skipped by 'goto Error'
+  C:/Users/Adi/Documents/Faks/semestar_7/CUDA/lab/lab5-6/matrix_multiplication/matrix_multiplication/kernel.cu(311): note: see declaration of 'blocks_per_grid'
+  C:/Users/Adi/Documents/Faks/semestar_7/CUDA/lab/lab5-6/matrix_multiplication/matrix_multiplication/kernel.cu(339): note: see declaration of 'Error'
+C:/Users/Adi/Documents/Faks/semestar_7/CUDA/lab/lab5-6/matrix_multiplication/matrix_multiplication/kernel.cu(339): warning C4533: initialization of 'threads_per_block' is skipped by 'goto Error'
+  C:/Users/Adi/Documents/Faks/semestar_7/CUDA/lab/lab5-6/matrix_multiplication/matrix_multiplication/kernel.cu(310): note: see declaration of 'threads_per_block'
+  C:/Users/Adi/Documents/Faks/semestar_7/CUDA/lab/lab5-6/matrix_multiplication/matrix_multiplication/kernel.cu(339): note: see declaration of 'Error'
+C:/Users/Adi/Documents/Faks/semestar_7/CUDA/lab/lab5-6/matrix_multiplication/matrix_multiplication/kernel.cu(349): warning C4267: 'argument': conversion from 'size_t' to 'unsigned int', possible loss of data
+C:/Users/Adi/Documents/Faks/semestar_7/CUDA/lab/lab5-6/matrix_multiplication/matrix_multiplication/kernel.cu(401): warning C4267: 'argument': conversion from 'size_t' to 'unsigned int', possible loss of data
+C:/Users/Adi/Documents/Faks/semestar_7/CUDA/lab/lab5-6/matrix_multiplication/matrix_multiplication/kernel.cu(402): warning C4267: 'argument': conversion from 'size_t' to 'unsigned int', possible loss of data
+C:/Users/Adi/Documents/Faks/semestar_7/CUDA/lab/lab5-6/matrix_multiplication/matrix_multiplication/kernel.cu(433): warning C4533: initialization of 'blocks_per_grid' is skipped by 'goto Error'
+  C:/Users/Adi/Documents/Faks/semestar_7/CUDA/lab/lab5-6/matrix_multiplication/matrix_multiplication/kernel.cu(402): note: see declaration of 'blocks_per_grid'
+  C:/Users/Adi/Documents/Faks/semestar_7/CUDA/lab/lab5-6/matrix_multiplication/matrix_multiplication/kernel.cu(433): note: see declaration of 'Error'
+C:/Users/Adi/Documents/Faks/semestar_7/CUDA/lab/lab5-6/matrix_multiplication/matrix_multiplication/kernel.cu(433): warning C4533: initialization of 'threads_per_block' is skipped by 'goto Error'
+  C:/Users/Adi/Documents/Faks/semestar_7/CUDA/lab/lab5-6/matrix_multiplication/matrix_multiplication/kernel.cu(401): note: see declaration of 'threads_per_block'
+  C:/Users/Adi/Documents/Faks/semestar_7/CUDA/lab/lab5-6/matrix_multiplication/matrix_multiplication/kernel.cu(433): note: see declaration of 'Error'
+C:/Users/Adi/Documents/Faks/semestar_7/CUDA/lab/lab5-6/matrix_multiplication/matrix_multiplication/kernel.cu(517): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:/Users/Adi/Documents/Faks/semestar_7/CUDA/lab/lab5-6/matrix_multiplication/matrix_multiplication/kernel.cu(522): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+  matrix_multiplication.vcxproj -> C:\Users\Adi\Documents\Faks\semestar_7\CUDA\lab\lab5-6\matrix_multiplication\x64\Debug\matrix_multiplication.exe
