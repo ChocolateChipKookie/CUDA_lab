@@ -156,16 +156,15 @@ int main(void)
          "A + B = C -> Correct" << correct_c << "\n"
          "C + E = D -> Correct" << correct_d << "\n"
          "D + G = F -> Correct" << correct_f << "\n"
-
-    }
-    catch (cl::Error err) {
-        std::cout << "Exception\n";
-        std::cerr 
-            << "ERROR: "
-            << err.what()
-            << "("
-            << err_code(err.err())
-           << ")"
-           << std::endl;
-    }
+   }
+   catch (cl::Error err) {
+      std::cout << "Exception\n";
+      std::cerr 
+         << "ERROR: "
+         << err.what()
+         << "("
+         << err_code(err.err())
+         << ")"
+         << std::endl;
+   }
 }
